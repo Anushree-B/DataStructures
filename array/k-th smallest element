@@ -1,0 +1,13 @@
+'''Given an array arr[] and an integer K where K is smaller than size of array, 
+the task is to find the Kth smallest element in the given array. It is given that all array elements are distinct.'''
+
+n=int(input("Enter the number of elements in array: "))
+arr=[]
+for i in range(n):
+    elm=int(input("Enter element: "))
+    arr.append(elm)
+
+k=int(input("Enter the value of k : "))
+
+arr.sort()
+print("k-th smallest element is: ",arr[k-1])
