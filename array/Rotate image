@@ -1,0 +1,21 @@
+'''You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
+You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.'''
+
+n=int(input("Enter n : "))
+mat=[[0]*n for _ in range(n)]
+for i in range(n):
+    for j in range(n):
+        elm=int(input("Enter element: "))
+        mat[i][j]=elm
+print("Original image: :")
+for i in(range(n)):
+    for j in (range(n)):
+        print(mat[i][j],end="\t")
+    print("\n")
+
+#traversing for loop in such a way that matrix is rotated
+print("\nRotated image: ")
+for i in(range(n)):
+    for j in reversed(range(n)):
+        print(mat[j][i],end="\t")
+    print("\n")
